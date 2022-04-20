@@ -7,10 +7,10 @@ from subword_base_tokenization import bpe_processing, encoding
 
 
 def main(args):
-    sample_text = """My lovely dog likes eating sausage.
-    My cat likes eating salmon.
-    Jane's koala likes eating eucalyptus leaves.
-    Jack's panda likes eating bamboo."""
+    sample_text = sample_text = """My lovely dog likes eating sausage.
+My cat likes eating salmon.
+Jane's koala likes eating eucalyptus leaves.
+Jack's panda likes eating bamboo."""
 
     listofsent = sample_text.split("\n")
 
