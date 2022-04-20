@@ -28,13 +28,13 @@ def main(args):
 
     if args.tokenization == "char":
         # Character-based tokenization
-        print("/nCharacter-based tokenization")
+        print("Character-based tokenization")
         print(character_tokenization(listofsent[idx], True))
 
     # Subword-based tokenization
     if args.tokenization == "subword":
         bpe_codes = bpe_processing(listofsent, args.num_merges)
-        print("/nSubWord-based tokenization (BPE)")
+        print("SubWord-based tokenization (BPE)")
         print(encoding(listofsent[idx], bpe_codes))
     
 if __name__ == "__main__":
