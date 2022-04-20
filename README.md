@@ -1,5 +1,5 @@
 # Overview
-- 
+- Tokenization is the first step in NLP where a piece of text such as a sentence or document is split into small pieces called tokens where the most widely used methods of tokenization are word-based, character-based, and subword-based tokenization. Word-based tokenization technique is the most commonly used technique. The text is broken down into word levels using a selected delimiter. Character-based tokenization is a technique that separates the text based on character. A distinctive characteristic of character-level tokenization is that it significantly reduces the size of the vocabulary. Also, this tokenization technique is able to handle Out Of Vocabulary (OOV) issues. OOV issue represents when the new words that appeared at the test step are not foreshadowed at the training step and do not exist in the vocabulary. This is a crucial problem for the systems that leverage word embeddings because OOV words cannot be converted to a real-value vector as a representation of a token in the vector space. Subword-based tokenization technique is most widely adopted in Transformer-based architectures such as WordPiece and Byte-Pair Encoding. This project aims to implement word-based, character-based and subword-based tokenization techniques.
 
 # Brief description
 - word_base_tokenization.py
