@@ -15,6 +15,7 @@ idx = random.randint(0,len(listofsent)-1)
 print(listofsent[idx])
 
 # Word-based tokenization
+print("Word-based tokenization")
 print(word_tokenization(listofsent[idx], None, True))
 print(word_tokenization(listofsent[idx], "stanza", True))
 print(word_tokenization(listofsent[idx], "spacy", True))
@@ -22,9 +23,11 @@ print(word_tokenization(listofsent[idx], "nltk", True))
 print(word_tokenization(listofsent[idx], "gensim", True))
 
 # Character-based tokenization
+print("/nCharacter-based tokenization")
 print(character_tokenization(listofsent[idx], True))
 
 # Subword-based tokenization
 num_merges = 20
 bpe_codes = bpe_processing(listofsent, num_merges)
-print(encoding(listofsent[idx]))
+print("/nSubWord-based tokenization")
+print(encoding(listofsent[idx], bpe_codes))
