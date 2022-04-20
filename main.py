@@ -15,7 +15,7 @@ def main(args):
     listofsent = sample_text.split("\n")
 
     idx = random.randint(0,len(listofsent)-1)
-    print(listofsent[idx])
+    print("Input text: {}".format(listofsent[idx]))
 
     if args.tokenization == "word":
         # Word-based tokenization
