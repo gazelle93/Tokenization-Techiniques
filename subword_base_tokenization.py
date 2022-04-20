@@ -41,7 +41,7 @@ def merge_dict(_best_pair, _dict):
 def bpe_processing(_listoftext, num_merges):
     num_merges = num_merges
 
-    vocab_freq_dict = get_char_tokens(listofsent)
+    vocab_freq_dict = get_char_tokens(_listoftext)
 
     bpe_codes = {}
     bpe_codes_reverse = {}
@@ -57,8 +57,8 @@ def bpe_processing(_listoftext, num_merges):
         
     return bpe_codes
   
-def encoding(_text):
-    input_vocab_freq = get_char_tokens([input_text])
+def encoding(_text, bpe_codes):
+    input_vocab_freq = get_char_tokens([_text])
     pair_freq = get_pairs(input_vocab_freq)
 
     while True:
